@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Fit_Model_Project.pages.EditPage"
+              NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#1B1B1B">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="60">
+                <ImageButton x:Name="ib" Source="left_arrow" BackgroundColor="Transparent" HeightRequest="60" WidthRequest="60" Padding="16" Margin="10,0,0,0" Clicked="ib_Clicked"></ImageButton>
+                <Label Text="Настройки" VerticalOptions="CenterAndExpand" Margin="-70,0,0,0" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="28" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+            <StackLayout Spacing="15" Padding="5,0,5,30">
+                <Frame BackgroundColor="#151515" Padding="25,15,25,20">
+                    <StackLayout Spacing="2">
+                        <Label Text="Основные данные" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="16" LineBreakMode="WordWrap"/>
+                        <Label Text="Вы можете изменить личные данные введя новые в поля ниже"  TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="16" LineBreakMode="WordWrap"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

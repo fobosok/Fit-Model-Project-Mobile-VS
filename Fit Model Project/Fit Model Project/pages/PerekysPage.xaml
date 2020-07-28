@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Fit_Model_Project.pages.PerekysPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#1B1B1B">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="0">
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="60">
+                    <ImageButton x:Name="ib" Source="left_arrow" BackgroundColor="Transparent" HeightRequest="60" WidthRequest="60" Padding="16" Margin="10,0,0,0" Clicked="ib_Clicked"></ImageButton>
+                    <Label Text="Завтраки" VerticalOptions="CenterAndExpand" Margin="-70,0,0,0" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="28" HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+                <StackLayout Padding="15,0,15,24" Spacing="55">
+                    <StackLayout Padding="0">
+                        <StackLayout Spacing="20">
+                            <Frame HeightRequest="150" Padding="0" CornerRadius="35">
+                                <Image Aspect="AspectFill" Source="Zavtrak1.jpg" ></Image>
+                            </Frame>
+                            <Label Text="Яичная запеканка 200г  с овощным салатом 200г" VerticalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="22"/>
+                            <Label TextColor="White" FontSize="16" Text="Яичная запеканка:&#10;&#10;Ингредиенты:&#10;&#10;Яйцо 4 шт&#10;Белок 370г&#10;Тунец в с/с 170г&#10;Оливки 60г&#10;Овечий сыр (30%) 140г&#10;Греческий йогурт 4% 170г&#10;Чеснок 10г&#10;Базилик ( или любая другая зелень) 30г&#10;Безглютеновая мука 80г&#10;Зелёная стручковая фасоль ( незамороженная) 80г&#10;Морковь ( на крупной терке) 50г&#10;Сливочное масло 7 г ( только для смазывания формы)&#10;&#10;Приготовление:&#10;&#10;Яйца, белок, йогурт, соль и муку перемешать, добавить морковь, порезанные на кружочки оливки и вылить половину смеси в смазанную форму. Сверху выливаем смешанный в кашицу базилик и чеснок, чтоб лучше перемешивался добавляем чуть белка, затем выкладываем часть сыра и заливаем всё второй половиной смеси. Сверху кладем стручковую фасоль и оставшийся сыр! Готовим при 180 градусах до золотистой корочки.&#10;&#10;КБЖУ на 100г :143/11,5/7,1/7,5&#10;&#10;&#10;Свжий салат:&#10;&#10;Ингредиенты:&#10;&#10;Огурец 1 шт&#10;Помидор 1 шт&#10;Смесь зеленый микс 50г&#10;Семечки тыквенные 10г&#10;Тыквенной масло 10г&#10;Соль, перец&#10;&#10;Приготовление:&#10;&#10;Нарезаем ингридиенты в произвольном порядке, добавляем соль, перец, масло и посыпаем семечками, предварительно обжаренными на сухой сковородке.&#10;&#10;КБЖУ на 100г: 73/1,9/5,5/3,7"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Padding="0">
+                        <StackLayout Spacing="20">
+                            <Frame HeightRequest="150" Padding="0" CornerRadius="35">
+                                <Image Aspect="AspectFill" Source="Zavtrak2.jpg" ></Image>
+                            </Frame>
+                            <Label Text="Овощной омлет 300г + цельнозерновой хлеб с арахисовой пастой (15г) + клубника 100г" VerticalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="22"/>
+                            <Label TextColor="White" FontSize="16" Text="Овощной омлет&#10;&#10;Ингридиенты:&#10;&#10;Шампиньоны 150г&#10;Помидор 1шт&#10;Огурец 1шт&#10;Болгарский перец  1шт&#10;Лук репчатый 1 шт&#10;Кинза 30г&#10;Белок 250г&#10;Сыр тертый 20г&#10;Оливковое масло 5г&#10;&#10;Приготовление:&#10;&#10;Все ингридиенты порезать кубиками, обжарить на оливковом масле лук с грибами, добавить паприку и огурцы, в последнюю очередь добавляем помидоры, соль перец по вкусу. Овощную смесь заливаем белком, перемешиваем, выключаем плиту и посыпаем сыром. 2-3 мин держим на горячей сковородке до готовности белка, выкладываем на тарелку и посыпаем кинзой.&#10;&#10;КБЖУ на 100г: 45/4,8/1,6/2,9&#10;&#10;&#10;Ц/З хлеб с арахисовой пастой&#10;&#10;Цельнозерновой хлеб 50г&#10;Арахисовая паста 15г&#10;&#10;КБЖУ на 100г: 376,5/13,1/19,3/38,4&#10;&#10;Клубника&#10;&#10;КБЖУ на 100г: 41/0,8/0,4/7,5"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Padding="0">
+                        <StackLayout Spacing="20">
+                            <Frame HeightRequest="150" Padding="0" CornerRadius="35">
+                                <Image Aspect="AspectFill" Source="Zavtrak3.jpg" ></Image>
+                            </Frame>
+                            <Label Text="Апельсиновые сырники 250г + маложирная сметана (15%) 50г" VerticalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="22"/>
+                            <Label TextColor="White" FontSize="16" Text="Апельсиновые сырники&#10;&#10;Ингридиенты:&#10;&#10;Творог 0,5% 600г&#10;Рикотта ( Otto)400г&#10;Ванильный творог ( Otto) 400г&#10;Яйцо 2 шт&#10;Творопыш 50г (если его нет, то использую безглютеновую муку )&#10;Манка 30г&#10;Кокосовый сахар 30г&#10;Безглютеновая мука 75г ( на обваливание сырников)&#10;Ваниль&#10;Цедра апельсина&#10;Оливковое масло 10г ( для жарки)&#10;&#10;Приготовление:&#10;&#10;Взбиваем вилочкой в глубокой миске 2 яйца, добавляем сахар, цедру апельсина, ваниль, творопыш. Перемешиваем и добавляем творог. Вымешиваем твороженную массу и формируем сырники, обваливая их в муке. Разогреваем сковороду, смазываем оливковым маслом и жарим сырники. Оставшиеся сырники можно заморозить в сыром виде и жарить по мере необходимости.&#10;&#10;КБЖУ на 100г: 117/10,5/2,7/13"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Padding="0">
+                        <StackLayout Spacing="20">
+                            <Frame HeightRequest="150" Padding="0" CornerRadius="35">
+                                <Image Aspect="AspectFill" Source="Zavtrak4.jpg" ></Image>
+                            </Frame>
+                            <Label Text="Бутерброд с лососем и яйцом" VerticalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="22"/>
+                            <Label TextColor="White" FontSize="16" Text="Бутерброд с лососем&#10;&#10;Ингредиенты&#10;&#10;Цельнозерновой хлеб 30г&#10;Авокадо 30г&#10;Зелень 5г&#10;Малосоленый лосось 40г&#10;Яйцо 1 шт&#10;&#10;Приготовление:&#10;&#10;На цельнозерновой хлеб кладем тонко нарезанный авокадо, зелень, сверху лосось и на лосось помещаем яйцо, жаренное на оливковом масле.&#10;&#10;КБЖУ на 100гр: 255/12,2/18,6/9,0"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Padding="0">
+                        <StackLayout Spacing="20">
+                            <Frame HeightRequest="150" Padding="0" CornerRadius="35">
+                                <Image Aspect="AspectFill" Source="Zavtrak5.jpg" ></Image>
+                            </Frame>
+                            <Label Text="Салат с авокадо и яйцом" VerticalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="22"/>
+                            <Label TextColor="White" FontSize="16" Text="Ингредиенты:&#10;&#10;Яйцо 2 шт&#10;Авокадо 70г&#10;Помидоры черри 200г&#10;Цукини 100г&#10;Оливковое масло 1 чл&#10;Соль перец по вкусу&#10;Лимон 1 долька&#10;&#10;Приготовление:&#10;&#10;Помидоры черри режем пополам, авокадо нарезаем кубиками и цукини режем тоненькими кружочками. Яйца режем пополам, смешиваем все ингредиенты в миске и приправляем маслом и соком дольки лимона. Соль, перец добавляем по вкусу.&#10;&#10;КБЖУ  – 396 ккал Б/Ж/У – 17,2/30,3/13,5"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Padding="0">
+                        <StackLayout Spacing="20">
+                            <Frame HeightRequest="150" Padding="0" CornerRadius="35">
+                                <Image Aspect="AspectFill" Source="Zavtrak6.jpg" ></Image>
+                            </Frame>
+                            <Label Text="Греческий йогурт с мюсли и корицей" VerticalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="22"/>
+                            <Label TextColor="White" FontSize="16" Text="Ингредиенты:&#10;&#10;Греческий йогурт 200г&#10;Мюсли без сахара 50г&#10;Яблоко 100г&#10;Молотая корица ½ чайной ложки&#10;Мед 1 чл&#10;&#10;Приготовление:&#10;&#10;Смешай йогурт с 1 чл меда. Вылей греческий йогурт в пиалу и раскроши мюсли поверх него. Добавь ломтики яблока и посыпь их корицей.&#10;&#10;КБЖУ  – 378 ккал Б/Ж/У – 14,8/9,35/56,1"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Padding="0">
+                        <StackLayout Spacing="20">
+                            <Frame HeightRequest="150" Padding="0" CornerRadius="35">
+                                <Image Aspect="AspectFill" Source="Zavtrak7.jpg" ></Image>
+                            </Frame>
+                            <Label Text="Кесадилья с яичницей болтуньей" VerticalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="22"/>
+                            <Label TextColor="White" FontSize="16" Text="Ингредиенты:&#10;&#10;Яйцо 1шт&#10;Зеленый перец 40г&#10;Красный лук 40г&#10;Цельнозерновая тортилья 1 шт.&#10;Тертый сыр 20г&#10;Оливковое масло 1чл&#10;Соус сальса по вкусу&#10;&#10;Приготовление:&#10;&#10;Овощи нарезать кубиками, обжарить вместе с яичницей болтуньей в 1 чл оливкового масла. На сухую сковороду положить тортилью, выложить на 1 половинку яичницу с овощами, посыпать сыром и добавить сальсу по вкусу, накрыть второй половинкой и слегка обжарить с 2 сторон.&#10;&#10;КБЖУ – 410,3 ккал 19,1/20,3/36,9"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Padding="0">
+                        <StackLayout Spacing="20">
+                            <Frame HeightRequest="150" Padding="0" CornerRadius="35">
+                                <Image Aspect="AspectFill" Source="Zavtrak8.jpg" ></Image>
+                            </Frame>
+                            <Label Text="Тропическая рикотта" VerticalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="22"/>
+                            <Label TextColor="White" FontSize="16" Text="Ингредиенты:&#10;&#10;Рикотта 200г&#10;Папайя или банан 100г&#10;Мед 1чл&#10;Семеня льна ½ чл&#10;&#10;Приготовление:&#10;&#10;Выкладываем рикотту в миску, смешиваем с 1 чл меда, сверху добавляем порезанную папайю или банан. Посыпаем семенами льна.&#10;&#10;КБЖУ  – 389,6 ккал Б/Ж/У – 19,2/22,7/19,4"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

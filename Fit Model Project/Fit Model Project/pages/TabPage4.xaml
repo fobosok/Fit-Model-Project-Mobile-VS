@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Fit_Model_Project.pages.TabPage4"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#1B1B1B">
+    <ContentPage.Content>
+        <StackLayout Spacing="15" Padding="25,15,25,30">
+            <Label Text="Сообщество" Margin="0,0,0,0" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="28" HorizontalOptions="CenterAndExpand"/>
+            <Frame Padding="0" BackgroundColor="Transparent">
+                <Image Source="socialNetPhoto.png" Aspect="AspectFill"></Image>
+            </Frame>
+            <Label Text="Присоединяйтесь к обществу Fit Model Project в социальных сетях!" Margin="0,0,0,0" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="20" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Есть вопросы которые вы хотите задать нашей команде? Хотите найти друзей и единомышленников в спорте? Тогда переходите на наши социальные сети и становитесь частью спортивной семьи Fit Model Project." Margin="0,0,0,0" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="16" HorizontalOptions="CenterAndExpand"/>
+            <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="CenterAndExpand" Padding="0,25,0,0">
+                <Frame HeightRequest="100" WidthRequest="100" HasShadow="True" BackgroundColor="#1b1b1b" CornerRadius="20">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                    </Frame.GestureRecognizers>
+                    <Image Source="soc1.png" Margin="12"/>
+                </Frame>
+                <Frame HeightRequest="100" WidthRequest="100" HasShadow="True"  BackgroundColor="#1b1b1b" CornerRadius="20">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                    </Frame.GestureRecognizers>
+                    <Image Source="soc2.png" Margin="12"/>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

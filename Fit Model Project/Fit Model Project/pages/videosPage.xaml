@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Fit_Model_Project.pages.videosPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#1B1B1B">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="60" >
+                    <ImageButton x:Name="ib" Source="left_arrow" BackgroundColor="Transparent" HeightRequest="60" WidthRequest="60" Padding="20" Margin="10,0,0,0" Clicked="ib_Clicked"></ImageButton>
+                    <Label Text="Тренировки" VerticalOptions="CenterAndExpand" Margin="-70,0,0,0" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="28" HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+                <Frame HeightRequest="150" Padding="0" CornerRadius="20" BackgroundColor="Transparent"  HorizontalOptions="CenterAndExpand" Margin="15,0,15,0">
+                    <AbsoluteLayout >
+                        <Image Aspect="AspectFill" Source="razminkaPhoto.png" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"></Image>
+                        <Label Text="Разминка" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="20" LineHeight="25" AbsoluteLayout.LayoutBounds=".1, .1, 100, 25" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                    </AbsoluteLayout>
+                </Frame>
+                <Label FontFamily="Avenir Next Cyr" FontSize="16" TextColor="White" HorizontalTextAlignment="Start" Text="Разминка - один из важнейших этапов тренировки. Правильно разогреть мышцы и подготовить тело к нагрузкам это залог продуктивных и полезных нагрузок." Margin="15,10,15,10" />
+                <StackLayout Orientation="Horizontal" Margin="15,0,15,0">
+                    <Label Text="Бесплатный материал" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="20" LineBreakMode="WordWrap"/>
+                    <!--<ImageButton x:Name="ib2" Source="left_arrow" BackgroundColor="Transparent" HeightRequest="30" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" WidthRequest="30" Padding="8" Margin="0,0,0,0" Clicked="ib_Clicked"></ImageButton>-->
+                </StackLayout>
+                <StackLayout x:Name="freeListStack">
+                    <ListView x:Name="freeList" HasUnevenRows="True" ItemSelected="freeList_ItemSelected" SeparatorVisibility="None" BackgroundColor="Transparent">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <ViewCell.View>
+                                        <Frame HeightRequest="126" Margin="20,6,20,6" Padding="0" HasShadow="False" BackgroundColor="Transparent" >
+                                            <Frame.GestureRecognizers>
+                                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                                            </Frame.GestureRecognizers>
+                                            <StackLayout Orientation="Horizontal" Margin="0">
+                                                <Frame WidthRequest="126" HeightRequest="126" MinimumWidthRequest="126" CornerRadius="5" Padding="0" IsClippedToBounds="True" HasShadow="False">
+                                                    <Image Source="{Binding photo}"  Aspect="AspectFill"></Image>
+                                                </Frame>
+                                                <StackLayout Spacing="2" Padding="12">
+                                                    <Label FontFamily="Avenir Next Cyr" Text="{Binding name}" FontSize="16" TextColor="White" HorizontalTextAlignment="Start" LineBreakMode="WordWrap"/>
+                                                    <Label FontFamily="Avenir Next Cyr" Text="{Binding description}" FontSize="12" TextColor="White" LineBreakMode="TailTruncation" MaxLines="3" HorizontalTextAlignment="Start"/>
+                                                </StackLayout>
+                                                <Image x:Name="check" HeightRequest="20" WidthRequest="20" Source="{Binding imageSource}"/>
+                                                <Label Text="{Binding video}" IsVisible="False" HeightRequest="0"></Label>
+                                                <Label Text="{Binding id}" IsVisible="False" HeightRequest="0"></Label>
+                                            </StackLayout>
+                                        </Frame>
+                                    </ViewCell.View>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+                
+                <StackLayout Orientation="Horizontal" Margin="15,10,15,10">
+                    <Label Text="Материал для подписчиков" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="20" LineBreakMode="WordWrap"/>
+                    <!--<ImageButton x:Name="ib3" Source="left_arrow" BackgroundColor="Transparent" HeightRequest="30" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" WidthRequest="30" Padding="8" Margin="0,0,0,0" Clicked="ib_Clicked"></ImageButton>-->
+                </StackLayout>
+                <StackLayout x:Name="paidListStack">
+                    <ListView x:Name="paidList" HasUnevenRows="True" ItemSelected="freeList_ItemSelected" SeparatorVisibility="None" BackgroundColor="Transparent">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell> 
+                                    <ViewCell.View>
+                                        <Frame HeightRequest="126" Margin="20,6,20,6" Padding="0" HasShadow="False" BackgroundColor="Transparent" >
+                                            <Frame.GestureRecognizers>
+                                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                                            </Frame.GestureRecognizers>
+                                            <StackLayout Orientation="Horizontal" Margin="0">
+                                                <Frame WidthRequest="126" HeightRequest="126" MinimumWidthRequest="126" CornerRadius="5" Padding="0" IsClippedToBounds="True" HasShadow="False">
+                                                    <Image Source="{Binding photo}"  Aspect="AspectFill"></Image>
+                                                </Frame>
+                                                <StackLayout Spacing="2" Padding="12">
+                                                    <Label FontFamily="Avenir Next Cyr" Text="{Binding name}" FontSize="16" TextColor="White" HorizontalTextAlignment="Start" LineBreakMode="WordWrap"/>
+                                                    <Label FontFamily="Avenir Next Cyr" Text="{Binding description}" FontSize="12" TextColor="White" LineBreakMode="TailTruncation" MaxLines="3" HorizontalTextAlignment="Start"/>
+                                                </StackLayout>
+                                                <Image x:Name="check" Source="{Binding imageSource}"/>
+                                                <Label Text="{Binding video}" IsVisible="False" HeightRequest="0"></Label>
+                                                <Label Text="{Binding id}" IsVisible="False" HeightRequest="0"></Label>
+                                            </StackLayout>
+                                        </Frame>
+                                    </ViewCell.View>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

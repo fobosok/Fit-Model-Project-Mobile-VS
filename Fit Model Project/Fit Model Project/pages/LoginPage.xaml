@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sh="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows" xmlns:fit_model_project="clr-namespace:Fit_Model_Project"
+             mc:Ignorable="d"
+             x:Class="Fit_Model_Project.pages.LoginPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#1B1B1B">
+    <ContentPage.Content>
+        <StackLayout Padding="38,90,38,20" Spacing="15">
+            <Image Source="logo" WidthRequest="96" HeightRequest="96" HorizontalOptions="CenterAndExpand"></Image>
+            <Label Text="Вход в аккаунт" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="28" LineHeight="34"/>
+            <Frame Padding="10,0,10,0" CornerRadius="25" BackgroundColor="#363636">
+                <fit_model_project:CustomEntry x:Name="loginEntry" Text="865peadd@gmail.com" HeightRequest="70" TextColor="White" Keyboard="Email" BackgroundColor="#363636" Placeholder="Ваш e-mail" PlaceholderColor="#d7d7d8"/>
+            </Frame>
+            <Frame Padding="10,0,10,0" CornerRadius="25" BackgroundColor="#363636">
+                <fit_model_project:CustomEntry x:Name="passwordEntry" Text="Qq10271994" HeightRequest="70" TextColor="White" BackgroundColor="#363636" Placeholder="Ваш пароль" PlaceholderColor="#d7d7d8" IsPassword="True"/>
+            </Frame>
+            <Button HeightRequest="70" CornerRadius="30" BackgroundColor="#C63C7B" Text="Войти в аккаунт" TextColor="White" Clicked="Button_Clicked_2"/>
+            <Button HeightRequest="70" CornerRadius="30" BackgroundColor="Transparent" Text="Зарегистрироваться" TextColor="#C63C7B" Clicked="Button_Clicked"/>
+            <Button HeightRequest="70" CornerRadius="30" BackgroundColor="Transparent" Text="Забыли пароль?" TextColor="#C7C7C7 " VerticalOptions="EndAndExpand" Clicked="Button_Clicked_1"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

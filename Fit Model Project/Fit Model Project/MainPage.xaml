@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Fit_Model_Project.MainPage">
+    
+    <ContentPage BackgroundImageSource="onb1.jpg">
+   
+        <StackLayout Padding="5,35,5,45" >
+            <Label Text="Добро пожаловать" FontFamily="Avenir Next Cyr" FontAttributes="Bold" FontSize="28" LineHeight="34" TextColor="#FFFFFF" HorizontalOptions="CenterAndExpand"/>
+            <StackLayout Spacing="4">
+                <Label Text="Вас приветствует команда" LineBreakMode="NoWrap" HorizontalOptions="CenterAndExpand" FontFamily="Avenir Next Cyr"  FontSize="16" LineHeight="18" TextColor="#FFFFFF"   />
+                <Label Text="Fit Model Project. Мы поможем Вам" LineBreakMode="NoWrap" HorizontalOptions="CenterAndExpand" FontFamily="Avenir Next Cyr"  FontSize="16" LineHeight="18" TextColor="#FFFFFF"   />
+                <Label Text="на пути к здоровому телу и духу" LineBreakMode="NoWrap" HorizontalOptions="CenterAndExpand" FontFamily="Avenir Next Cyr"  FontSize="16" LineHeight="18" TextColor="#FFFFFF"   />
+            </StackLayout>
+            <Grid VerticalOptions="EndAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="8*"/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="1" Source="dots1" HeightRequest="15" WidthRequest="57"/>
+                <Button Grid.Column="2" Text="Log in/Register" BackgroundColor="Transparent" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="16" FontAttributes="None" Clicked="Button_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+    
+    <ContentPage BackgroundImageSource="onb2.jpg">
+        <StackLayout Padding="5,35,5,45" >
+            <Label Text="Питаемся правильно" FontFamily="Avenir Next Cyr" FontAttributes="Bold" FontSize="28" LineHeight="34" TextColor="#FFFFFF" HorizontalOptions="CenterAndExpand"/>
+            <StackLayout Spacing="4">
+                <Label Text="Мы подобрали для вас лучшие" LineBreakMode="NoWrap" HorizontalOptions="CenterAndExpand" FontFamily="Avenir Next Cyr"  FontSize="16" LineHeight="18" TextColor="#FFFFFF"   />
+                <Label Text="рецепты и программы питания чтобы" LineBreakMode="NoWrap" HorizontalOptions="CenterAndExpand" FontFamily="Avenir Next Cyr"  FontSize="16" LineHeight="18" TextColor="#FFFFFF"   />
+                <Label Text="всегда оставаться в форме" LineBreakMode="NoWrap" HorizontalOptions="CenterAndExpand" FontFamily="Avenir Next Cyr"  FontSize="16" LineHeight="18" TextColor="#FFFFFF"   />
+            </StackLayout>
+            <Grid VerticalOptions="EndAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="8*"/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="1" Source="dots2" HeightRequest="15" WidthRequest="57"/>
+                <Button Grid.Column="2" Text="Log in/Register" BackgroundColor="Transparent" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="16" FontAttributes="None" Clicked="Button_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+    
+    <ContentPage BackgroundImageSource="onb3.jpg">
+        <StackLayout Padding="5,35,5,45" >
+            <Label Text="Тренируемся усердно" FontFamily="Avenir Next Cyr" FontAttributes="Bold" FontSize="28" LineHeight="34" TextColor="#FFFFFF" HorizontalOptions="CenterAndExpand"/>
+            <StackLayout Spacing="4">
+                <Label Text="Наши профессиональные программы" LineBreakMode="NoWrap" HorizontalOptions="CenterAndExpand" FontFamily="Avenir Next Cyr"  FontSize="16" LineHeight="18" TextColor="#FFFFFF"   />
+                <Label Text="и курсы тренировок помогут Вам" LineBreakMode="NoWrap" HorizontalOptions="CenterAndExpand" FontFamily="Avenir Next Cyr"  FontSize="16" LineHeight="18" TextColor="#FFFFFF"   />
+                <Label Text="достичь желаемых целей" LineBreakMode="NoWrap" HorizontalOptions="CenterAndExpand" FontFamily="Avenir Next Cyr"  FontSize="16" LineHeight="18" TextColor="#FFFFFF"   />
+            </StackLayout>
+            <Grid VerticalOptions="EndAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="8*"/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="1" Source="dots3" HeightRequest="15" WidthRequest="57"/>
+                <Button Grid.Column="2" Text="Log in/Register" BackgroundColor="Transparent" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="16" FontAttributes="None" Clicked="Button_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+    
+    <ContentPage BackgroundImageSource="onb4.jpg">
+        <StackLayout Padding="5,35,5,45" >
+            <Label Text="Вперед к цели" FontFamily="Avenir Next Cyr" FontAttributes="Bold" FontSize="28" LineHeight="34" TextColor="#FFFFFF" HorizontalOptions="CenterAndExpand"/>
+            <StackLayout Spacing="4">
+                <Label Text="Ваша целеустремленность плюс советы    " LineBreakMode="NoWrap" HorizontalOptions="CenterAndExpand" FontFamily="Avenir Next Cyr"  FontSize="16" LineHeight="18" TextColor="#FFFFFF"   />
+                <Label Text="опытных тренеров Fit Model Project," LineBreakMode="NoWrap" HorizontalOptions="CenterAndExpand" FontFamily="Avenir Next Cyr"  FontSize="16" LineHeight="18" TextColor="#FFFFFF"   />
+                <Label Text="это и есть ключ к успеху!" LineBreakMode="NoWrap" HorizontalOptions="CenterAndExpand" FontFamily="Avenir Next Cyr"  FontSize="16" LineHeight="18" TextColor="#FFFFFF"   />
+            </StackLayout>
+            <Grid VerticalOptions="EndAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="8*"/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="1" Source="dots4" HeightRequest="15" WidthRequest="57"/>
+                <Button Grid.Column="2" Text="Log in/Register" BackgroundColor="Transparent" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="16" FontAttributes="None" Clicked="Button_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+    
+</CarouselPage>
