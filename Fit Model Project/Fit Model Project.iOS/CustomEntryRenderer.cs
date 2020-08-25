@@ -13,18 +13,18 @@ namespace Fit_Model_Project.iOS
 
     public class CustomEntryRenderer : EntryRenderer
     {
-        protected override void OnElementChanged(ElementChangedEventArgs<Entry> e)
-        {
-            base.OnElementChanged(e);
+        //protected override void OnElementChanged(ElementChangedEventArgs<Entry> e)
+        //{
+        //    base.OnElementChanged(e);
 
-            this.Control.LeftView = new UIView(new CGRect(0, 0, 8, this.Control.Frame.Height));
-            this.Control.RightView = new UIView(new CGRect(0, 0, 8, this.Control.Frame.Height));
-            this.Control.LeftViewMode = UITextFieldViewMode.Always;
-            this.Control.RightViewMode = UITextFieldViewMode.Always;
+        //    this.Control.LeftView = new UIView(new CGRect(0, 0, 8, this.Control.Frame.Height));
+        //    this.Control.RightView = new UIView(new CGRect(0, 0, 8, this.Control.Frame.Height));
+        //    this.Control.LeftViewMode = UITextFieldViewMode.Always;
+        //    this.Control.RightViewMode = UITextFieldViewMode.Always;
 
-            this.Control.BorderStyle = UITextBorderStyle.None;
-            this.Element.HeightRequest = 30;
-        }
+        //    this.Control.BorderStyle = UITextBorderStyle.None;
+        //    this.Element.HeightRequest = 30;
+        //}
     }
 
 }

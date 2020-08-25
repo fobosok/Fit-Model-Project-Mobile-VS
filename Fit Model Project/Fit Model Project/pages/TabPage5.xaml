@@ -8,64 +8,72 @@
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="#1B1B1B">
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="60">
-                <Label Text="Профиль" VerticalOptions="CenterAndExpand" Margin="80,0,0,0" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="28" HorizontalOptions="CenterAndExpand"/>
-                <ImageButton x:Name="ib" Source="settingsIcon.png" BackgroundColor="Transparent" HeightRequest="60" WidthRequest="60" Padding="18" Margin="10,0,10,0" Clicked="ib_Clicked"></ImageButton>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout BackgroundColor="#C63C7B" Padding="10">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1" NumberOfTapsRequired="1"/>
+                    </StackLayout.GestureRecognizers>
+                    <Label Text="NEW ONLINE РROJECT SOON" TextColor="White" HorizontalTextAlignment="Center" FontSize="20" TextDecorations="Underline"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="60">
+                    <Label Text="Профиль" VerticalOptions="CenterAndExpand" Margin="80,0,0,0" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="28" HorizontalOptions="CenterAndExpand"/>
+                    <ImageButton x:Name="ib" Source="settingsIcon.png" BackgroundColor="Transparent" HeightRequest="60" WidthRequest="60" Padding="18" Margin="10,0,10,0" Clicked="ib_Clicked"></ImageButton>
+                </StackLayout>
+                <Frame HeightRequest="88" BackgroundColor="#151515" Padding="0">
+                    <StackLayout VerticalOptions="CenterAndExpand" Padding="25,0,25,0">
+                        <Label Text="Имя"  Margin="0,0,0,0" FontAttributes="Bold" TextColor="#C7C7C7" FontFamily="Avenir Next Cyr" FontSize="16"/>
+                        <Label x:Name="nameLabel"  Margin="0,0,0,0" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="20"/>
+                    </StackLayout>
+                </Frame>
+                <Frame HeightRequest="88" BackgroundColor="#151515" Padding="0">
+                    <StackLayout VerticalOptions="CenterAndExpand" Padding="25,0,25,0">
+                        <Label Text="Фамилия" Margin="0,0,0,0" FontAttributes="Bold" TextColor="#C7C7C7" FontFamily="Avenir Next Cyr" FontSize="16"/>
+                        <Label x:Name="surenameLabel"  Margin="0,0,0,0" TextColor="#FFFFFF" FontFamily=" Avenir Next Cyr" FontSize="20"/>
+                    </StackLayout>
+                </Frame>
+                <Frame HeightRequest="88" BackgroundColor="#151515" Padding="0">
+                    <StackLayout VerticalOptions="CenterAndExpand" Padding="25,0,25,0">
+                        <Label Text="Ваш e-mail" Margin="0,0,0,0" FontAttributes="Bold" TextColor="#C7C7C7" FontFamily="Avenir Next Cyr" FontSize="16"/>
+                        <Label x:Name="emailLabel"  Margin="0,0,0,0" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="20"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#151515" Padding="25,15,25,20">
+                    <StackLayout Spacing="2">
+                        <Label Text="ПОДПИСКА НА ПРОГРАММУ:" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="20" LineBreakMode="WordWrap"/>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Статус: "  Margin="0,0,0,0" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="16"/>
+                            <Label x:Name="statusLabel" Margin="0,0,0,0" TextColor="#7fff00" FontFamily="Avenir Next Cyr" FontSize="16"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Дата продления: "  Margin="0,0,0,0" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="16"/>
+                            <Label x:Name="dateLabel"  Margin="0,0,0,0" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="16"/>
+                        </StackLayout>
+                        <Grid Padding="0,15,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*"></ColumnDefinition>
+                                <ColumnDefinition Width="2*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Button Grid.Column="0" x:Name="but1" Text="Изменить тариф" BorderColor="#C63C7B" BorderWidth="1" TextColor="White" BackgroundColor="#C63C7B" FontFamily="Avenir Next Cyr" FontSize="14"  HeightRequest="35" Margin="0" Padding="0" CornerRadius="20" Clicked="but1_Clicked"/>
+                            <Button Grid.Column="1" x:Name="but2" Text="Отменить" BorderColor="#919191" BorderWidth="1" TextColor="#919191" BackgroundColor="Transparent" FontFamily="Avenir Next Cyr" FontSize="14"  HeightRequest="35" Margin="0" Padding="0" CornerRadius="20" Clicked="but2_Clicked"/>
+                        </Grid>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="Transparent">
+                    <StackLayout HorizontalOptions="CenterAndExpand">
+                        <Label Text="Есть вопросы? Напиши нам:" HorizontalTextAlignment="Center" Margin="0,0,0,0" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="16"/>
+                        <Label Text="info@fitmodelproject.ee" HorizontalTextAlignment="Center" Margin="0,0,0,0" TextColor="#C63C7B" FontFamily="Avenir Next Cyr" FontSize="16"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="Transparent">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                    </Frame.GestureRecognizers>
+                    <StackLayout HorizontalOptions="CenterAndExpand">
+                        <Label Text="Выйти из аккаунта" HorizontalTextAlignment="Center" Margin="0,0,0,0" TextColor="#C63C7B" FontFamily="Avenir Next Cyr" FontSize="16"/>
+                    </StackLayout>
+                </Frame>
             </StackLayout>
-            <Frame HeightRequest="88" BackgroundColor="#151515" Padding="0">
-                <StackLayout VerticalOptions="CenterAndExpand" Padding="25,0,25,0">
-                    <Label Text="Имя"  Margin="0,0,0,0" FontAttributes="Bold" TextColor="#C7C7C7" FontFamily="Avenir Next Cyr" FontSize="16"/>
-                    <Label x:Name="nameLabel"  Margin="0,0,0,0" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="20"/>
-                </StackLayout>
-            </Frame>
-            <Frame HeightRequest="88" BackgroundColor="#151515" Padding="0">
-                <StackLayout VerticalOptions="CenterAndExpand" Padding="25,0,25,0">
-                    <Label Text="Фамилия" Margin="0,0,0,0" FontAttributes="Bold" TextColor="#C7C7C7" FontFamily="Avenir Next Cyr" FontSize="16"/>
-                    <Label x:Name="surenameLabel"  Margin="0,0,0,0" TextColor="#FFFFFF" FontFamily=" Avenir Next Cyr" FontSize="20"/>
-                </StackLayout>
-            </Frame>
-            <Frame HeightRequest="88" BackgroundColor="#151515" Padding="0">
-                <StackLayout VerticalOptions="CenterAndExpand" Padding="25,0,25,0">
-                    <Label Text="Ваш e-mail" Margin="0,0,0,0" FontAttributes="Bold" TextColor="#C7C7C7" FontFamily="Avenir Next Cyr" FontSize="16"/>
-                    <Label x:Name="emailLabel"  Margin="0,0,0,0" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="20"/>
-                </StackLayout>
-            </Frame>
-            <Frame BackgroundColor="#151515" Padding="25,15,25,20">
-                <StackLayout Spacing="2">
-                    <Label Text="ПОДПИСКА НА ПРОГРАММУ:" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="20" LineBreakMode="WordWrap"/>
-                    <StackLayout Orientation="Horizontal">
-                        <Label Text="Статус: "  Margin="0,0,0,0" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="16"/>
-                        <Label x:Name="statusLabel" Margin="0,0,0,0" TextColor="#7fff00" FontFamily="Avenir Next Cyr" FontSize="16"/>
-                    </StackLayout>
-                    <StackLayout Orientation="Horizontal">
-                        <Label Text="Дата продления: "  Margin="0,0,0,0" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="16"/>
-                        <Label x:Name="dateLabel"  Margin="0,0,0,0" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="16"/>
-                    </StackLayout>
-                    <Grid Padding="0,15,0,0">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="3*"></ColumnDefinition>
-                            <ColumnDefinition Width="2*"></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-                        <Button Grid.Column="0" x:Name="but1" Text="Изменить тариф" BorderColor="#C63C7B" BorderWidth="1" TextColor="White" BackgroundColor="#C63C7B" FontFamily="Avenir Next Cyr" FontSize="14"  HeightRequest="35" Margin="0" Padding="0" CornerRadius="20" Clicked="but1_Clicked"/>
-                        <Button Grid.Column="1" x:Name="but2" Text="Отменить" BorderColor="#919191" BorderWidth="1" TextColor="#919191" BackgroundColor="Transparent" FontFamily="Avenir Next Cyr" FontSize="14"  HeightRequest="35" Margin="0" Padding="0" CornerRadius="20" Clicked="but2_Clicked"/>
-                    </Grid>
-                </StackLayout>
-            </Frame>
-            <Frame BackgroundColor="Transparent">
-                <StackLayout HorizontalOptions="CenterAndExpand">
-                    <Label Text="Есть вопросы? Напиши нам:" HorizontalTextAlignment="Center" Margin="0,0,0,0" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="16"/>
-                    <Label Text="info@fitmodelproject.ee" HorizontalTextAlignment="Center" Margin="0,0,0,0" TextColor="#C63C7B" FontFamily="Avenir Next Cyr" FontSize="16"/>
-                </StackLayout>
-            </Frame>
-            <Frame BackgroundColor="Transparent">
-                <Frame.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"></TapGestureRecognizer>
-                </Frame.GestureRecognizers>
-                <StackLayout HorizontalOptions="CenterAndExpand">
-                    <Label Text="Выйти из аккаунта" HorizontalTextAlignment="Center" Margin="0,0,0,0" TextColor="#C63C7B" FontFamily="Avenir Next Cyr" FontSize="16"/>
-                </StackLayout>
-            </Frame>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

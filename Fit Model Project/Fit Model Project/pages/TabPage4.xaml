@@ -8,27 +8,38 @@
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="#1B1B1B">
     <ContentPage.Content>
-        <StackLayout Spacing="15" Padding="25,15,25,30">
-            <Label Text="Сообщество" Margin="0,0,0,0" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="28" HorizontalOptions="CenterAndExpand"/>
-            <Frame Padding="0" BackgroundColor="Transparent">
-                <Image Source="socialNetPhoto.png" Aspect="AspectFill"></Image>
-            </Frame>
-            <Label Text="Присоединяйтесь к обществу Fit Model Project в социальных сетях!" Margin="0,0,0,0" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="20" HorizontalOptions="CenterAndExpand"/>
-            <Label Text="Есть вопросы которые вы хотите задать нашей команде? Хотите найти друзей и единомышленников в спорте? Тогда переходите на наши социальные сети и становитесь частью спортивной семьи Fit Model Project." Margin="0,0,0,0" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="16" HorizontalOptions="CenterAndExpand"/>
-            <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="CenterAndExpand" Padding="0,25,0,0">
-                <Frame HeightRequest="100" WidthRequest="100" HasShadow="True" BackgroundColor="#1b1b1b" CornerRadius="20">
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"></TapGestureRecognizer>
-                    </Frame.GestureRecognizers>
-                    <Image Source="soc1.png" Margin="12"/>
-                </Frame>
-                <Frame HeightRequest="100" WidthRequest="100" HasShadow="True"  BackgroundColor="#1b1b1b" CornerRadius="20">
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1" NumberOfTapsRequired="1"></TapGestureRecognizer>
-                    </Frame.GestureRecognizers>
-                    <Image Source="soc2.png" Margin="12"/>
-                </Frame>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout BackgroundColor="#C63C7B" Padding="10">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2" NumberOfTapsRequired="1"/>
+                    </StackLayout.GestureRecognizers>
+                    <Label Text="NEW ONLINE РROJECT SOON" TextColor="White" HorizontalTextAlignment="Center" FontSize="20" TextDecorations="Underline"/>
+                </StackLayout>
+                <StackLayout Spacing="10" Padding="25,15,25,30">
+                    <Label Text="Сообщество" Margin="0,0,0,0" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="28" HorizontalOptions="CenterAndExpand"/>
+                    <Frame Padding="0" BackgroundColor="Transparent">
+                        <Image Source="socialNetPhoto.png" Aspect="AspectFill"></Image>
+                    </Frame>
+                    <Label Text="Присоединяйтесь к обществу Fit Model Project в социальных сетях!" Margin="0,0,0,0" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="20" HorizontalOptions="CenterAndExpand"/>
+                    <Label Text="Есть вопросы которые вы хотите задать нашей команде? Хотите найти друзей и единомышленников в спорте? Тогда переходите на наши социальные сети и становитесь частью спортивной семьи Fit Model Project." Margin="0,0,0,0" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="16" HorizontalOptions="CenterAndExpand"/>
+                    <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="CenterAndExpand" Padding="0,25,0,0">
+                        <Frame HeightRequest="100" WidthRequest="100" HasShadow="True" BackgroundColor="#1b1b1b" CornerRadius="20">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                            </Frame.GestureRecognizers>
+                            <Image Source="soc1.png" Margin="12"/>
+                        </Frame>
+                        <Frame HeightRequest="100" WidthRequest="100" HasShadow="True"  BackgroundColor="#1b1b1b" CornerRadius="20">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                            </Frame.GestureRecognizers>
+                            <Image Source="soc2.png" Margin="12"/>
+                        </Frame>
+                    </StackLayout>
+                </StackLayout>
             </StackLayout>
-        </StackLayout>
+        </ScrollView>
+        
     </ContentPage.Content>
 </ContentPage>

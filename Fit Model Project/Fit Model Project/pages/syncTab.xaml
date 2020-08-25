@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:tabview="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Fit_Model_Project.pages.syncTab"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#1B1B1B">
+    <ContentPage.Content>
+        <tabview:SfTabView TabHeaderPosition="Bottom" DisplayMode="ImageWithText" VisibleHeaderCount="5">
+            <tabview:SfTabView.SelectionIndicatorSettings>
+                <tabview:SelectionIndicatorSettings
+                    Color="#1B1B1B" 
+                    Position="Top" 
+                    StrokeThickness="0"/>
+            </tabview:SfTabView.SelectionIndicatorSettings>
+            <tabview:SfTabView.Items>
+                <tabview:SfTabItem Title="Главная" FontIconFontFamily="te.ttf" IconFont="&#xe800;" FontIconFontColor="White" SelectionColor="#C63C7B" TitleFontColor="White">
+                    <tabview:SfTabItem.Content>
+                        <ScrollView>
+                            <StackLayout>
+                                <StackLayout BackgroundColor="#C63C7B" Padding="10">
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_5" NumberOfTapsRequired="1"/>
+                                    </StackLayout.GestureRecognizers>
+                                    <Label Text="NEW ONLINE РROJECT SOON" TextColor="White" HorizontalTextAlignment="Center" FontSize="20" TextDecorations="Underline"/>
+                                </StackLayout>
+                                <StackLayout Padding="15,24,15,24" Spacing="15">
+                                    <StackLayout Orientation="Horizontal" Padding="0">
+                                        <Label Text="Тренировки" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="28" LineHeight="34" HorizontalOptions="CenterAndExpand"/>
+                                        <Button Text="Выбрать день" TextColor="#FFFFFF" HeightRequest="30" Padding="0" WidthRequest="114" VerticalOptions="CenterAndExpand" FontFamily="#FFFFFF" FontSize="14" BackgroundColor="#C63C7B" CornerRadius="25" HorizontalOptions="CenterAndExpand"/>
+                                    </StackLayout>
+                                    <Frame HeightRequest="150" Padding="0" CornerRadius="20" BackgroundColor="Transparent"  HorizontalOptions="CenterAndExpand">
+                                        <Frame.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                                        </Frame.GestureRecognizers>
+                                        <AbsoluteLayout >
+                                            <Image Aspect="AspectFill" Source="razminkaPhoto.png" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"></Image>
+                                            <Label Text="Разминка" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="20" LineHeight="25" AbsoluteLayout.LayoutBounds=".1, .1, 100, 25" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                                        </AbsoluteLayout>
+                                    </Frame>
+                                    <Frame HeightRequest="150" Padding="0" CornerRadius="20" BackgroundColor="Transparent">
+                                        <AbsoluteLayout >
+                                            <Image Aspect="AspectFill" Source="treniryemsyavzalePhoto.png" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"></Image>
+                                            <Label Text="В тренажерном" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="20" LineHeight="25" AbsoluteLayout.LayoutBounds=".1, .1, 160, 25" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                                            <Label Text="зале" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="20" LineHeight="25" AbsoluteLayout.LayoutBounds=".08, .3, 100, 25" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                                        </AbsoluteLayout>
+                                    </Frame>
+                                    <Frame HeightRequest="150" Padding="0" CornerRadius="20" BackgroundColor="Transparent">
+                                        <AbsoluteLayout >
+                                            <Image Aspect="AspectFill" Source="treniryemsyadomaPhoto.png" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"></Image>
+                                            <Label Text="Тренируемся" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="20" LineHeight="25" AbsoluteLayout.LayoutBounds=".1, .1, 140, 25" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                                            <Label Text="дома" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="20" LineHeight="25" AbsoluteLayout.LayoutBounds=".09, .3, 100, 25" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                                        </AbsoluteLayout>
+                                    </Frame>
+                                    <Frame HeightRequest="150" Padding="0" CornerRadius="20" BackgroundColor="Transparent">
+                                        <AbsoluteLayout >
+                                            <Image Aspect="AspectFill" Source="zaminkaPhoto.png" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"></Image>
+                                            <Label Text="Заминка" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="20" LineHeight="25" AbsoluteLayout.LayoutBounds=".1, .1, 100, 25" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                                        </AbsoluteLayout>
+                                    </Frame>
+                                    <StackLayout Orientation="Horizontal" Padding="0">
+                                        <Label Text="Питание" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="28" LineHeight="34" HorizontalOptions="StartAndExpand"/>
+
+                                    </StackLayout>
+                                    <Frame HeightRequest="150" Padding="0" CornerRadius="20" BackgroundColor="Transparent">
+                                        <Frame.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                                        </Frame.GestureRecognizers>
+                                        <AbsoluteLayout >
+                                            <Image Aspect="AspectFill" Source="zavtrakPhoto.png" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"></Image>
+                                            <Label Text="Завтрак" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="20" LineHeight="25" AbsoluteLayout.LayoutBounds=".1, .1, 100, 25" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                                        </AbsoluteLayout>
+                                    </Frame>
+                                    <Frame HeightRequest="150" Padding="0" CornerRadius="20" BackgroundColor="Transparent">
+                                        <Frame.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                                        </Frame.GestureRecognizers>
+                                        <AbsoluteLayout >
+                                            <Image Aspect="AspectFill" Source="perekysPhoto.png" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"></Image>
+                                            <Label Text="Перекус" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="20" LineHeight="25" AbsoluteLayout.LayoutBounds=".1, .1, 100, 25" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                                        </AbsoluteLayout>
+                                    </Frame>
+                                    <Frame HeightRequest="150" Padding="0" CornerRadius="20" BackgroundColor="Transparent">
+                                        <Frame.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                                        </Frame.GestureRecognizers>
+                                        <AbsoluteLayout >
+                                            <Image Aspect="AspectFill" Source="obedPhoto.png" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"></Image>
+                                            <Label Text="Обед" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="20" LineHeight="25" AbsoluteLayout.LayoutBounds=".1, .1, 100, 25" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                                        </AbsoluteLayout>
+                                    </Frame>
+                                    <Frame HeightRequest="150" Padding="0" CornerRadius="20" BackgroundColor="Transparent">
+                                        <Frame.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                                        </Frame.GestureRecognizers>
+                                        <AbsoluteLayout >
+                                            <Image Aspect="AspectFill" Source="yjinPhoto.png " AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"></Image>
+                                            <Label Text="Ужин" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="20" LineHeight="25" AbsoluteLayout.LayoutBounds=".1, .1, 100, 25" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                                        </AbsoluteLayout>
+                                    </Frame>
+                                </StackLayout>
+                            </StackLayout>
+                        </ScrollView>
+                    </tabview:SfTabItem.Content>
+                </tabview:SfTabItem>
+                <tabview:SfTabItem Title="Инфо" FontIconFontFamily="te.ttf" IconFont="&#xe804;" FontIconFontColor="White" SelectionColor="#C63C7B" TitleFontColor="White">
+                    <tabview:SfTabItem.Content>
+                        <StackLayout>
+                            <StackLayout BackgroundColor="#C63C7B" Padding="10">
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_5" NumberOfTapsRequired="1"/>
+                                </StackLayout.GestureRecognizers>
+                                <Label Text="NEW ONLINE РROJECT SOON" TextColor="White" HorizontalTextAlignment="Center" FontSize="20" TextDecorations="Underline"/>
+                            </StackLayout>
+                            <StackLayout Spacing="15" Padding="5,15,5,30">
+                                <Label Text="Информация" VerticalOptions="CenterAndExpand" Margin="0,0,0,0" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="28" HorizontalOptions="CenterAndExpand"/>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Padding="0" Margin="0" BackgroundColor="Transparent" Spacing="20">
+                                    <Button x:Name="but1" Text="О нас" BorderColor="#C63C7B" BorderWidth="1" TextColor="White" BackgroundColor="#C63C7B" FontFamily="Avenir Next Cyr" FontSize="16" WidthRequest="150" HeightRequest="35" Margin="0" Padding="0" CornerRadius="20" Clicked="Button_Clicked"/>
+                                    <Button x:Name="but2" Text="Отзывы" BorderColor="White" BorderWidth="1" TextColor="White" BackgroundColor="Transparent" FontFamily="Avenir Next Cyr" FontSize="16" WidthRequest="150" HeightRequest="35" Margin="0" Padding="0" CornerRadius="20" Clicked="Button_Clicked_1"/>
+                                </StackLayout>
+                                <ListView x:Name="aboutList" HasUnevenRows="True" ItemSelected="aboutList_ItemSelected" SeparatorVisibility="None">
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <ViewCell>
+                                                <ViewCell.View>
+                                                    <Frame HeightRequest="126" Margin="20,6,20,6" Padding="0" HasShadow="False" BackgroundColor="Transparent" >
+                                                        <StackLayout Orientation="Horizontal" Margin="0">
+                                                            <Frame WidthRequest="126" HeightRequest="126" MinimumWidthRequest="126" CornerRadius="5" Padding="0" IsClippedToBounds="True" HasShadow="False">
+                                                                <Image Source="{Binding photo}"  Aspect="AspectFill"></Image>
+                                                            </Frame>
+                                                            <StackLayout Spacing="2" Padding="12">
+                                                                <Label FontFamily="Avenir Next Cyr" Text="{Binding name}" FontSize="16" TextColor="White" HorizontalTextAlignment="Start" LineBreakMode="WordWrap"/>
+                                                                <Label FontFamily="Avenir Next Cyr" Text="{Binding text}" FontSize="12" TextColor="White" LineBreakMode="TailTruncation" MaxLines="3" HorizontalTextAlignment="Start"/>
+                                                            </StackLayout>
+                                                            <Label Text="{Binding id}" IsVisible="False" HeightRequest="0"></Label>
+                                                        </StackLayout>
+                                                    </Frame>
+                                                </ViewCell.View>
+                                            </ViewCell>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                </ListView>
+                            </StackLayout>
+                        </StackLayout>
+                    </tabview:SfTabItem.Content>
+                </tabview:SfTabItem>
+                <tabview:SfTabItem Title="Статьи" FontIconFontFamily="te.ttf" IconFont="&#xe803;" FontIconFontColor="White" SelectionColor="#C63C7B" TitleFontColor="White">
+                    <tabview:SfTabItem.Content>
+                        <StackLayout>
+                            <StackLayout BackgroundColor="#C63C7B" Padding="10">
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_5" NumberOfTapsRequired="1"/>
+                                </StackLayout.GestureRecognizers>
+                                <Label Text="NEW ONLINE РROJECT SOON" TextColor="White" HorizontalTextAlignment="Center" FontSize="20" TextDecorations="Underline"/>
+                            </StackLayout>
+                            <StackLayout Spacing="15" Padding="5,15,5,30">
+                                <Label Text="Статьи" VerticalOptions="CenterAndExpand" Margin="0,0,0,0" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="28" HorizontalOptions="CenterAndExpand"/>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Padding="0" Margin="0" BackgroundColor="Transparent" Spacing="20">
+                                    <Button x:Name="but11" Text="Новые" BorderColor="#C63C7B" BorderWidth="1" TextColor="White" BackgroundColor="#C63C7B" FontFamily="Avenir Next Cyr" FontSize="16" HeightRequest="35" Margin="0" Padding="0" CornerRadius="20" Clicked="but1_Clicked"/>
+                                    <Button x:Name="but22" Text="Архив" BorderColor="White" BorderWidth="1" TextColor="White" BackgroundColor="Transparent" FontFamily="Avenir Next Cyr" FontSize="16" HeightRequest="35" Margin="0" Padding="0" CornerRadius="20" Clicked="but2_Clicked"/>
+                                    <Button x:Name="but33" Text="FAQ" BorderColor="White" BorderWidth="1" TextColor="White" BackgroundColor="Transparent" FontFamily="Avenir Next Cyr" FontSize="16" HeightRequest="35" Margin="0" Padding="0" CornerRadius="20" Clicked="but3_Clicked"/>
+                                </StackLayout>
+                                <ListView x:Name="articlesList" HasUnevenRows="True" ItemSelected="articlesList_ItemSelected" SeparatorVisibility="None">
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <ViewCell>
+                                                <ViewCell.View>
+                                                    <Frame HeightRequest="126" Margin="20,6,20,6" Padding="0" HasShadow="False" BackgroundColor="Transparent" >
+                                                        <StackLayout Orientation="Horizontal" Margin="0">
+                                                            <Frame WidthRequest="126" HeightRequest="126" MinimumWidthRequest="126" CornerRadius="5" Padding="0" IsClippedToBounds="True" HasShadow="False">
+                                                                <Image Source="{Binding photo}"  Aspect="AspectFill"></Image>
+                                                            </Frame>
+                                                            <StackLayout Spacing="2" Padding="12">
+                                                                <Label FontFamily="Avenir Next Cyr" Text="{Binding title}" FontSize="16" TextColor="White" HorizontalTextAlignment="Start" LineBreakMode="WordWrap"/>
+                                                                <Label FontFamily="Avenir Next Cyr" Text="{Binding text}" FontSize="12" TextColor="White" LineBreakMode="TailTruncation" MaxLines="3" HorizontalTextAlignment="Start"/>
+                                                            </StackLayout>
+                                                            <Label Text="{Binding id}" IsVisible="False" HeightRequest="0"></Label>
+                                                        </StackLayout>
+                                                    </Frame>
+                                                </ViewCell.View>
+                                            </ViewCell>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                </ListView>
+                            </StackLayout>
+                        </StackLayout>
+                    </tabview:SfTabItem.Content>
+                </tabview:SfTabItem>
+                <tabview:SfTabItem Title="Сообщество" FontIconFontFamily="te.ttf" IconFont="&#xe801;" FontIconFontColor="White" SelectionColor="#C63C7B" TitleFontColor="White">
+                    <tabview:SfTabItem.Content>
+                        <ScrollView>
+                            <StackLayout>
+                                <StackLayout BackgroundColor="#C63C7B" Padding="10">
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_5" NumberOfTapsRequired="1"/>
+                                    </StackLayout.GestureRecognizers>
+                                    <Label Text="NEW ONLINE РROJECT SOON" TextColor="White" HorizontalTextAlignment="Center" FontSize="20" TextDecorations="Underline"/>
+                                </StackLayout>
+                                <StackLayout Spacing="10" Padding="25,15,25,30">
+                                    <Label Text="Сообщество" Margin="0,0,0,0" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="28" HorizontalOptions="CenterAndExpand"/>
+                                    <Frame Padding="0" BackgroundColor="Transparent">
+                                        <Image Source="socialNetPhoto.png" Aspect="AspectFill"></Image>
+                                    </Frame>
+                                    <Label Text="Присоединяйтесь к обществу Fit Model Project в социальных сетях!" Margin="0,0,0,0" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="20" HorizontalOptions="CenterAndExpand"/>
+                                    <Label Text="Есть вопросы которые вы хотите задать нашей команде? Хотите найти друзей и единомышленников в спорте? Тогда переходите на наши социальные сети и становитесь частью спортивной семьи Fit Model Project." Margin="0,0,0,0" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="16" HorizontalOptions="CenterAndExpand"/>
+                                    <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="CenterAndExpand" Padding="0,25,0,0">
+                                        <Frame HeightRequest="100" WidthRequest="100" HasShadow="True" BackgroundColor="#1b1b1b" CornerRadius="20">
+                                            <Frame.GestureRecognizers>
+                                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_6" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                                            </Frame.GestureRecognizers>
+                                            <Image Source="soc1.png" Margin="12"/>
+                                        </Frame>
+                                        <Frame HeightRequest="100" WidthRequest="100" HasShadow="True"  BackgroundColor="#1b1b1b" CornerRadius="20">
+                                            <Frame.GestureRecognizers>
+                                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_7" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                                            </Frame.GestureRecognizers>
+                                            <Image Source="soc2.png" Margin="12"/>
+                                        </Frame>
+                                    </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+                        </ScrollView>
+                    </tabview:SfTabItem.Content>
+                </tabview:SfTabItem>
+                <tabview:SfTabItem Title="Профиль" FontIconFontFamily="te.ttf" IconFont="&#xe802;" FontIconFontColor="White" SelectionColor="#C63C7B" TitleFontColor="White">
+                    <tabview:SfTabItem.Content>
+                        <ScrollView>
+                            <StackLayout>
+                                <StackLayout BackgroundColor="#C63C7B" Padding="10">
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_5" NumberOfTapsRequired="1"/>
+                                    </StackLayout.GestureRecognizers>
+                                    <Label Text="NEW ONLINE РROJECT SOON" TextColor="White" HorizontalTextAlignment="Center" FontSize="20" TextDecorations="Underline"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="60">
+                                    <Label Text="Профиль" VerticalOptions="CenterAndExpand" Margin="80,0,0,0" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="28" HorizontalOptions="CenterAndExpand"/>
+                                    <ImageButton x:Name="ib" Source="settingsIcon.png" BackgroundColor="Transparent" HeightRequest="60" WidthRequest="60" Padding="18" Margin="10,0,10,0" Clicked="ib_Clicked"></ImageButton>
+                                </StackLayout>
+                                <Frame HeightRequest="88" BackgroundColor="#151515" Padding="0">
+                                    <StackLayout VerticalOptions="CenterAndExpand" Padding="25,0,25,0">
+                                        <Label Text="Имя"  Margin="0,0,0,0" FontAttributes="Bold" TextColor="#C7C7C7" FontFamily="Avenir Next Cyr" FontSize="16"/>
+                                        <Label x:Name="nameLabel"  Margin="0,0,0,0" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="20"/>
+                                    </StackLayout>
+                                </Frame>
+                                <Frame HeightRequest="88" BackgroundColor="#151515" Padding="0">
+                                    <StackLayout VerticalOptions="CenterAndExpand" Padding="25,0,25,0">
+                                        <Label Text="Фамилия" Margin="0,0,0,0" FontAttributes="Bold" TextColor="#C7C7C7" FontFamily="Avenir Next Cyr" FontSize="16"/>
+                                        <Label x:Name="surenameLabel"  Margin="0,0,0,0" TextColor="#FFFFFF" FontFamily=" Avenir Next Cyr" FontSize="20"/>
+                                    </StackLayout>
+                                </Frame>
+                                <Frame HeightRequest="88" BackgroundColor="#151515" Padding="0">
+                                    <StackLayout VerticalOptions="CenterAndExpand" Padding="25,0,25,0">
+                                        <Label Text="Ваш e-mail" Margin="0,0,0,0" FontAttributes="Bold" TextColor="#C7C7C7" FontFamily="Avenir Next Cyr" FontSize="16"/>
+                                        <Label x:Name="emailLabel"  Margin="0,0,0,0" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="20"/>
+                                    </StackLayout>
+                                </Frame>
+                                <Frame BackgroundColor="#151515" Padding="25,15,25,20">
+                                    <StackLayout Spacing="2">
+                                        <Label Text="ПОДПИСКА НА ПРОГРАММУ:" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="20" LineBreakMode="WordWrap"/>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="Статус: "  Margin="0,0,0,0" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="16"/>
+                                            <Label x:Name="statusLabel" Margin="0,0,0,0" TextColor="#7fff00" FontFamily="Avenir Next Cyr" FontSize="16"/>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="Дата продления: "  Margin="0,0,0,0" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="16"/>
+                                            <Label x:Name="dateLabel"  Margin="0,0,0,0" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="16"/>
+                                        </StackLayout>
+                                        <Grid Padding="0,15,0,0">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="3*"></ColumnDefinition>
+                                                <ColumnDefinition Width="2*"></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <Button Grid.Column="0" x:Name="but111" Text="Изменить тариф" BorderColor="#C63C7B" BorderWidth="1" TextColor="White" BackgroundColor="#C63C7B" FontFamily="Avenir Next Cyr" FontSize="14"  HeightRequest="35" Margin="0" Padding="0" CornerRadius="20" Clicked="but111_Clicked"/>
+                                            <Button Grid.Column="1" x:Name="but222" Text="Отменить" BorderColor="#919191" BorderWidth="1" TextColor="#919191" BackgroundColor="Transparent" FontFamily="Avenir Next Cyr" FontSize="14"  HeightRequest="35" Margin="0" Padding="0" CornerRadius="20" Clicked="but222_Clicked"/>
+                                        </Grid>
+                                    </StackLayout>
+                                </Frame>
+                                <Frame BackgroundColor="Transparent">
+                                    <StackLayout HorizontalOptions="CenterAndExpand">
+                                        <Label Text="Есть вопросы? Напиши нам:" HorizontalTextAlignment="Center" Margin="0,0,0,0" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="16"/>
+                                        <Label Text="info@fitmodelproject.ee" HorizontalTextAlignment="Center" Margin="0,0,0,0" TextColor="#C63C7B" FontFamily="Avenir Next Cyr" FontSize="16"/>
+                                    </StackLayout>
+                                </Frame>
+                                <Frame BackgroundColor="Transparent">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_8" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                                    </Frame.GestureRecognizers>
+                                    <StackLayout HorizontalOptions="CenterAndExpand">
+                                        <Label Text="Выйти из аккаунта" HorizontalTextAlignment="Center" Margin="0,0,0,0" TextColor="#C63C7B" FontFamily="Avenir Next Cyr" FontSize="16"/>
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                        </ScrollView>
+                    </tabview:SfTabItem.Content>
+                </tabview:SfTabItem>
+            </tabview:SfTabView.Items>
+        </tabview:SfTabView>
+    </ContentPage.Content>
+</ContentPage>

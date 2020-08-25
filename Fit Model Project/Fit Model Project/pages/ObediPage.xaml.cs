@@ -26,5 +26,10 @@ namespace Fit_Model_Project.pages
 			ib.PropagateUpClicked();
 			return true;
 		}
+
+		private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+		{
+			await Navigation.PushModalAsync(new NewPojSoonPage(), false);
+		}
 	}
 }

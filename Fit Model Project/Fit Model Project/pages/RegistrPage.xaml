@@ -9,36 +9,44 @@ xmlns:checkbox="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Butt
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="#1B1B1B">
     <ContentPage.Content>
-        <StackLayout Padding="38,55,30,20" Spacing="15">
-            <Image Source="logo" WidthRequest="90" HeightRequest="90" HorizontalOptions="CenterAndExpand"></Image>
-            <Label Text="Регистрация"  HorizontalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="28" LineHeight="34"/>
-            <Frame Padding="10,0,10,0" CornerRadius="25" BackgroundColor="#363636">
-                <fit_model_project:CustomEntry HeightRequest="66" FontSize="16" FontFamily="Avenir Next Cyr" TextColor="White" BackgroundColor="#363636" Placeholder="Имя" PlaceholderColor="#d7d7d8"/>
-            </Frame>
-            <Frame Padding="10,0,10,0" CornerRadius="25" BackgroundColor="#363636">
-                <fit_model_project:CustomEntry HeightRequest="66" FontSize="16" FontFamily="Avenir Next Cyr" TextColor="White" BackgroundColor="#363636" Placeholder="Фамилия" PlaceholderColor="#d7d7d8"/>
-            </Frame>
-            <Frame Padding="10,0,10,0" CornerRadius="25" BackgroundColor="#363636">
-                <fit_model_project:CustomEntry HeightRequest="66" FontSize="16" FontFamily="Avenir Next Cyr" TextColor="White" BackgroundColor="#363636" Placeholder="Ваш e-mail" Keyboard="Email" PlaceholderColor="#d7d7d8" IsPassword="True"/>
-            </Frame>
-            <Frame Padding="10,0,10,0" Margin="0,0,0,5" CornerRadius="25" BackgroundColor="#363636">
-                <fit_model_project:CustomEntry HeightRequest="66" FontSize="16" FontFamily="Avenir Next Cyr" TextColor="White" BackgroundColor="#363636" Placeholder="Придумайте пароль" PlaceholderColor="#d7d7d8" IsPassword="True"/>
-            </Frame>
-            <Frame Padding="0" BackgroundColor="Transparent">
-                <Frame.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"></TapGestureRecognizer>
-                </Frame.GestureRecognizers>
-                <StackLayout Orientation="Horizontal">
-                    <checkbox:SfCheckBox x:Name="checkBox" VerticalOptions="StartAndExpand" TextColor="#C7C7C7" CheckedColor="#363636" UncheckedColor="#363636" TickColor="#C63C7B" CornerRadius="5"/>
-                    <StackLayout Spacing="1">
-                        <Label Text="Да, я хочу получать последние" FontFamily="Avenir Next Cyr" FontSize="14" LineHeight="20" TextColor="#C7C7C7"></Label>
-                        <Label Text="новости и предложения" FontFamily="Avenir Next Cyr" FontSize="14" LineHeight="20" TextColor="#C7C7C7"></Label>
-                        <Label Text="от Fit Model Project" FontFamily="Avenir Next Cyr" FontSize="14" LineHeight="20" TextColor="#C7C7C7"></Label>
+        <StackLayout>
+            <StackLayout BackgroundColor="#C63C7B" Padding="10">
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1" NumberOfTapsRequired="1"/>
+                </StackLayout.GestureRecognizers>
+                <Label Text="NEW ONLINE РROJECT SOON" TextColor="White" HorizontalTextAlignment="Center" FontSize="20" TextDecorations="Underline"/>
+            </StackLayout>
+            <StackLayout Padding="38,55,30,20" Spacing="15">
+                <Image Source="logo" WidthRequest="90" HeightRequest="90" HorizontalOptions="CenterAndExpand"></Image>
+                <Label Text="Регистрация"  HorizontalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="28" LineHeight="34"/>
+                <Frame Padding="10,0,10,0" CornerRadius="25" BackgroundColor="#363636">
+                    <fit_model_project:CustomEntry x:Name="firstNameEntry" HeightRequest="66" FontSize="16" FontFamily="Avenir Next Cyr" TextColor="White" BackgroundColor="#363636" Placeholder="Имя" PlaceholderColor="#d7d7d8"/>
+                </Frame>
+                <Frame Padding="10,0,10,0" CornerRadius="25" BackgroundColor="#363636">
+                    <fit_model_project:CustomEntry x:Name="lastNameEntry" HeightRequest="66" FontSize="16" FontFamily="Avenir Next Cyr" TextColor="White" BackgroundColor="#363636" Placeholder="Фамилия" PlaceholderColor="#d7d7d8"/>
+                </Frame>
+                <Frame Padding="10,0,10,0" CornerRadius="25" BackgroundColor="#363636">
+                    <fit_model_project:CustomEntry x:Name="emailEntry" HeightRequest="66" FontSize="16" FontFamily="Avenir Next Cyr" TextColor="White" BackgroundColor="#363636" Placeholder="Ваш e-mail" Keyboard="Email" PlaceholderColor="#d7d7d8" IsPassword="True"/>
+                </Frame>
+                <Frame Padding="10,0,10,0" Margin="0,0,0,5" CornerRadius="25" BackgroundColor="#363636">
+                    <fit_model_project:CustomEntry x:Name="passwordEntry" HeightRequest="66" FontSize="16" FontFamily="Avenir Next Cyr" TextColor="White" BackgroundColor="#363636" Placeholder="Придумайте пароль" PlaceholderColor="#d7d7d8" IsPassword="True"/>
+                </Frame>
+                <Frame Padding="0" BackgroundColor="Transparent">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                    </Frame.GestureRecognizers>
+                    <StackLayout Orientation="Horizontal">
+                        <checkbox:SfCheckBox x:Name="checkBox" VerticalOptions="StartAndExpand" TextColor="#C7C7C7" CheckedColor="#363636" UncheckedColor="#363636" TickColor="#C63C7B" CornerRadius="5"/>
+                        <StackLayout Spacing="1">
+                            <Label Text="Да, я хочу получать последние" FontFamily="Avenir Next Cyr" FontSize="14" LineHeight="20" TextColor="#C7C7C7"></Label>
+                            <Label Text="новости и предложения" FontFamily="Avenir Next Cyr" FontSize="14" LineHeight="20" TextColor="#C7C7C7"></Label>
+                            <Label Text="от Fit Model Project" FontFamily="Avenir Next Cyr" FontSize="14" LineHeight="20" TextColor="#C7C7C7"></Label>
+                        </StackLayout>
                     </StackLayout>
-                </StackLayout>
-            </Frame>
-            <checkbox:SfButton HeightRequest="70" CornerRadius="30" BackgroundColor="#C63C7B" Text="Создать аккаунт" FontSize="16" FontFamily="Avenir Next Cyr" TextColor="White"/>
-            <checkbox:SfButton x:Name="ib" HeightRequest="70" CornerRadius="30" BackgroundColor="Transparent" Text="Войти в аккаунт" FontSize="16" FontFamily="Avenir Next Cyr" TextColor="#C63C7B" Clicked="Button_Clicked"/>
+                </Frame>
+                <checkbox:SfButton HeightRequest="70" CornerRadius="30" BackgroundColor="#C63C7B" Text="Создать аккаунт" FontSize="16" FontFamily="Avenir Next Cyr" TextColor="White" Clicked="SfButton_Clicked"/>
+                <checkbox:SfButton x:Name="ib" HeightRequest="70" CornerRadius="30" BackgroundColor="Transparent" Text="Войти в аккаунт" FontSize="16" FontFamily="Avenir Next Cyr" TextColor="#C63C7B" Clicked="Button_Clicked"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

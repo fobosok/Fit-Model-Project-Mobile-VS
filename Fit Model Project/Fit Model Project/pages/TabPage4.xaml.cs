@@ -26,5 +26,10 @@ namespace Fit_Model_Project.pages
 		{
 			await Browser.OpenAsync(@"https://www.facebook.com/FitModelProject", BrowserLaunchMode.SystemPreferred);
 		}
+
+		private async void TapGestureRecognizer_Tapped_2(object sender, EventArgs e)
+		{
+			await Navigation.PushModalAsync(new NewPojSoonPage(), false);
+		}
 	}
 }

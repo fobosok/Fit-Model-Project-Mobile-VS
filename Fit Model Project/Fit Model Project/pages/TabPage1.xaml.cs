@@ -69,5 +69,10 @@ namespace Fit_Model_Project.pages
 		{
 			await Navigation.PushModalAsync(new videosPage(workout.workouts[0]), false);
 		}
+
+		private async void TapGestureRecognizer_Tapped_5(object sender, EventArgs e)
+		{
+			await Navigation.PushModalAsync(new NewPojSoonPage(), false);
+		}
 	}
 }

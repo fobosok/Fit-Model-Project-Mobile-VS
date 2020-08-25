@@ -1,3 +1,5 @@
+using Syncfusion.SfCarousel.XForms.iOS;
+using Syncfusion.XForms.iOS.TabView;
 using Syncfusion.XForms.iOS.Buttons;
 using Syncfusion.XForms.iOS.TextInputLayout;
 using System;
@@ -25,6 +27,8 @@ namespace Fit_Model_Project.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
 global::Xamarin.Forms.Forms.Init();
+SfCarouselRenderer.Init();
+SfTabViewRenderer.Init();
 SfButtonRenderer.Init();
 SfCheckBoxRenderer.Init();
 SfTextInputLayoutRenderer.Init();

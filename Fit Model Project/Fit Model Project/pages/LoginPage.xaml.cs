@@ -33,6 +33,9 @@ namespace Fit_Model_Project.pages
 
 		private async void Button_Clicked_2(object sender, EventArgs e)
 		{
+			actInd.HeightRequest = 100;
+			actInd.IsRunning = true;
+			loginPageAll.IsVisible = false;
 			try
 			{
 				string login = loginEntry.Text;
@@ -52,12 +55,21 @@ namespace Fit_Model_Project.pages
 				var result = JsonConvert.DeserializeObject<serverResult>(o.ToString());
 				await SecureStorage.SetAsync("token", result.token);
 				await SecureStorage.SetAsync("login", "yes");
-				App.Current.MainPage = new StartTabbedPage();
+				App.Current.MainPage = new syncTab();
 			}
 			catch (Exception exp)
 			{
 				await DisplayAlert("login error", exp.Message, "1");
 			}
+			finally
+			{
+				actInd.HeightRequest = 0;
+			}
+		}
+
+		private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+		{
+			await Navigation.PushModalAsync(new NewPojSoonPage(), false);
 		}
 	}
 }

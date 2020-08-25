@@ -10,6 +10,12 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Padding="15,24,15,24" Spacing="15">
+                <StackLayout BackgroundColor="#C63C7B" Padding="10">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_5" NumberOfTapsRequired="1"/>
+                    </StackLayout.GestureRecognizers>
+                    <Label Text="NEW ONLINE РROJECT SOON" TextColor="White" HorizontalTextAlignment="Center" FontSize="20" TextDecorations="Underline"/>
+                </StackLayout>
                 <StackLayout Orientation="Horizontal" Padding="0">
                     <Label Text="Тренировки" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="28" LineHeight="34" HorizontalOptions="CenterAndExpand"/>
                     <Button Text="Пятница" TextColor="#FFFFFF" HeightRequest="30" Padding="0" WidthRequest="114" VerticalOptions="CenterAndExpand" FontFamily="#FFFFFF" FontSize="14" BackgroundColor="#C63C7B" CornerRadius="25" HorizontalOptions="CenterAndExpand"/>

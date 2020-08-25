@@ -46,7 +46,7 @@ namespace Fit_Model_Project.pages
 				articlesList.ItemsSource = null;
 				articlesList.ItemsSource = result.articles;
 			}
-			catch (Exception exp)
+			catch
 			{
 				
 			}
@@ -69,7 +69,7 @@ namespace Fit_Model_Project.pages
 				var result = JsonConvert.DeserializeObject<articlesResult>(o.ToString());
 				temp2List = result.articles;
 			}
-			catch (Exception exp)
+			catch
 			{
 
 			}
@@ -91,7 +91,7 @@ namespace Fit_Model_Project.pages
 				JObject o = JObject.Parse(json5);
 				fr = JsonConvert.DeserializeObject<faqResult>(o.ToString());
 			}
-			catch (Exception exp)
+			catch
 			{
 			}
 		}
@@ -129,6 +129,11 @@ namespace Fit_Model_Project.pages
 		private void articlesList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
 		{
 			((ListView)sender).SelectedItem = null;
+		}
+
+		private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+		{
+			await Navigation.PushModalAsync(new NewPojSoonPage(), false);
 		}
 	}
 }

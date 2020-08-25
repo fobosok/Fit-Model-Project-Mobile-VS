@@ -9,18 +9,34 @@ xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Sync
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="#1B1B1B">
     <ContentPage.Content>
-        <StackLayout Padding="38,90,38,20" Spacing="15">
-            <Image Source="logo" WidthRequest="96" HeightRequest="96" HorizontalOptions="CenterAndExpand"></Image>
-            <Label Text="Вход в аккаунт" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="28" LineHeight="34"/>
-            <Frame Padding="10,0,10,0" CornerRadius="25" BackgroundColor="#363636">
-                <fit_model_project:CustomEntry x:Name="loginEntry" Text="865peadd@gmail.com" HeightRequest="70" TextColor="White" Keyboard="Email" BackgroundColor="#363636" Placeholder="Ваш e-mail" PlaceholderColor="#d7d7d8"/>
-            </Frame>
-            <Frame Padding="10,0,10,0" CornerRadius="25" BackgroundColor="#363636">
-                <fit_model_project:CustomEntry x:Name="passwordEntry" Text="Qq10271994" HeightRequest="70" TextColor="White" BackgroundColor="#363636" Placeholder="Ваш пароль" PlaceholderColor="#d7d7d8" IsPassword="True"/>
-            </Frame>
-            <Button HeightRequest="70" CornerRadius="30" BackgroundColor="#C63C7B" Text="Войти в аккаунт" TextColor="White" Clicked="Button_Clicked_2"/>
-            <Button HeightRequest="70" CornerRadius="30" BackgroundColor="Transparent" Text="Зарегистрироваться" TextColor="#C63C7B" Clicked="Button_Clicked"/>
-            <Button HeightRequest="70" CornerRadius="30" BackgroundColor="Transparent" Text="Забыли пароль?" TextColor="#C7C7C7 " VerticalOptions="EndAndExpand" Clicked="Button_Clicked_1"/>
+        <StackLayout>
+            <StackLayout.Padding>
+                <OnPlatform x:TypeArguments="Thickness" iOS="0,30,0,0" Android="0"/>
+            </StackLayout.Padding>
+            <StackLayout x:Name="loginPageAll" Spacing="0" Padding="0">
+                <StackLayout BackgroundColor="#C63C7B" Padding="10">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"/>
+                    </StackLayout.GestureRecognizers>
+                    <Label Text="NEW ONLINE РROJECT SOON" TextColor="White" HorizontalTextAlignment="Center" FontSize="20" TextDecorations="Underline"/>
+                </StackLayout>
+                <StackLayout Padding="38,90,38,20" Spacing="15">
+                    <Image Source="logo" WidthRequest="96" HeightRequest="96" HorizontalOptions="CenterAndExpand"></Image>
+                    <Label Text="Вход в аккаунт" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="#FFFFFF" FontFamily="Avenir Next Cyr" FontSize="28"/>
+                    <Frame Padding="10,0,10,0" CornerRadius="25" BackgroundColor="#363636">
+                        <fit_model_project:CustomEntry x:Name="loginEntry" Text="865peadd@gmail.com" HeightRequest="70" TextColor="White" Keyboard="Email" BackgroundColor="#363636" Placeholder="Ваш e-mail" PlaceholderColor="#d7d7d8"/>
+                    </Frame>
+                    <Frame Padding="10,0,10,0" CornerRadius="25" BackgroundColor="#363636">
+                        <fit_model_project:CustomEntry x:Name="passwordEntry" Text="Qq10271994" HeightRequest="70" TextColor="White" BackgroundColor="#363636" Placeholder="Ваш пароль" PlaceholderColor="#d7d7d8" IsPassword="True"/>
+                    </Frame>
+                    <Button HeightRequest="70" CornerRadius="30" BackgroundColor="#C63C7B" Text="Войти в аккаунт" TextColor="White" Clicked="Button_Clicked_2"/>
+                    <Button HeightRequest="70" CornerRadius="30" BackgroundColor="Transparent" Text="Зарегистрироваться" TextColor="#C63C7B" Clicked="Button_Clicked"/>
+                    <Button HeightRequest="70" CornerRadius="30" BackgroundColor="Transparent" Text="Забыли пароль?" TextColor="#C7C7C7 " VerticalOptions="EndAndExpand" Clicked="Button_Clicked_1"/>
+                </StackLayout>
+            </StackLayout>
+            <ActivityIndicator x:Name="actInd" IsRunning="False" Color="#C63C7B" HeightRequest="0" VerticalOptions="CenterAndExpand">
+
+            </ActivityIndicator>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

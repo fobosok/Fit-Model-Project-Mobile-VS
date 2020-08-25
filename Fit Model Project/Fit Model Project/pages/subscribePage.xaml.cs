@@ -35,5 +35,10 @@ namespace Fit_Model_Project.pages
 		{
 
 		}
+
+		private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+		{
+			await Navigation.PushModalAsync(new NewPojSoonPage(), false);
+		}
 	}
 }

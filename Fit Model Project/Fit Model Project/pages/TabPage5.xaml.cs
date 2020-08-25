@@ -59,7 +59,7 @@ namespace Fit_Model_Project.pages
 					but2.IsVisible = true;
 				}
 			}
-			catch (Exception exp)
+			catch
 			{
 				
 			}
@@ -102,10 +102,15 @@ namespace Fit_Model_Project.pages
 				SecureStorage.Remove("login");
 				App.Current.MainPage = new NavigationPage(new LoginPage());
 			}
-			catch (Exception exp)
+			catch 
 			{
 
 			}
+		}
+
+		private async void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
+		{
+			await Navigation.PushModalAsync(new NewPojSoonPage(), false);
 		}
 	}
 }

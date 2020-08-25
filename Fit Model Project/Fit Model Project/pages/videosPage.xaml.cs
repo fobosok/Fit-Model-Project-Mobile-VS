@@ -79,5 +79,10 @@ namespace Fit_Model_Project.pages
 		{
 			((ListView)sender).SelectedItem = null;
 		}
+
+		private async void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
+		{
+			await Navigation.PushModalAsync(new NewPojSoonPage(), false);
+		}
 	}
 }

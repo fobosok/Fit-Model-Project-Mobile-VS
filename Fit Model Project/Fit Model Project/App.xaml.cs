@@ -2,6 +2,7 @@
 using System;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration;
 using Xamarin.Forms.Xaml;
 
 namespace Fit_Model_Project
@@ -12,11 +13,12 @@ namespace Fit_Model_Project
 		{
 			Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjkxMDQ2QDMxMzgyZTMyMmUzMFFnelRZbzVFYktodnNIVi9kUnpxU2VJZmdrT0FMVk9XTksyMjdod2pVZlU9");
 			InitializeComponent();
-			if(SecureStorage.GetAsync("started").Result == "yes")
+
+			if (SecureStorage.GetAsync("started").Result == "yes")
 			{
 				if(SecureStorage.GetAsync("login").Result == "yes")
 				{
-					MainPage = new NavigationPage(new StartTabbedPage());
+					MainPage = new NavigationPage(new syncTab());
 				}
 				else
 				{
